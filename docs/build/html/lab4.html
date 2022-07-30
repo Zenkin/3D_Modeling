@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторная работа №4 &mdash; документация 3Д Моделирование 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="Лабораторная работа №3" href="lab3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> 3Д Моделирование
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Содержание:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="lab1.html">Лабораторная работа №1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab2.html">Лабораторная работа №2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab3.html">Лабораторная работа №3</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Лабораторная работа №4</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3Д Моделирование</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Лабораторная работа №4</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/lab4.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="o4">
+<h1>Лабораторная работа №4<a class="headerlink" href="#o4" title="Permalink to this heading"></a></h1>
+<p>В данной работе создадим детали подвески. Для этого создаем новую “Part Studio” с именем “Suspension”. В этой вкладке будет все, что касается подвески: рычаги подвески, колеса, система натяжения гусеницы и траки для гусеницы.</p>
+<ol class="arabic simple">
+<li><p>Рычаг подвески</p></li>
+</ol>
+<p>Этот элемент будет отвечать за амортизацию модели, а так же будет выступать в роли оси для катков.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/Рисунок113.png"><img alt="Лаб4" src="_images/Рисунок113.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 1</span><a class="headerlink" href="#id1" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>И, аналогично начинаем с эскиза на правой плоскости.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/Рисунок212.png"><img alt="Лаб4" src="_images/Рисунок212.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 2</span><a class="headerlink" href="#id2" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем окружности.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/Рисунок33.png"><img alt="Лаб4" src="_images/Рисунок33.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 3</span><a class="headerlink" href="#id3" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Добавляем касательные отрезки.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/Рисунок42.png"><img alt="Лаб4" src="_images/Рисунок42.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 4</span><a class="headerlink" href="#id4" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выставляем необходимые зависимости с помощью показанного инструмента (с включенным инструментом поочередно нажимаем на отрезок и на прямую для выставления зависимости).</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/Рисунок52.png"><img alt="Лаб4" src="_images/Рисунок52.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 5</span><a class="headerlink" href="#id5" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Аналогично с еще двумя отрезками.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/Рисунок63.png"><img alt="Лаб4" src="_images/Рисунок63.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 6</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем подобным образом. Обратите внимание! должно получиться 4 отверстия в готовой детали.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/Рисунок72.png"><img alt="Лаб4" src="_images/Рисунок72.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 7</span><a class="headerlink" href="#id7" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее выдавим опорную ось.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/Рисунок82.png"><img alt="Лаб4" src="_images/Рисунок82.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 8</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/Рисунок92.png"><img alt="Лаб4" src="_images/Рисунок92.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 9</span><a class="headerlink" href="#id9" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Проработаем ось для колеса.</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/Рисунок102.png"><img alt="Лаб4" src="_images/Рисунок102.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 10</span><a class="headerlink" href="#id10" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="_images/Рисунок114.png"><img alt="Лаб4" src="_images/Рисунок114.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 11</span><a class="headerlink" href="#id11" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее сама ось, на которой будет вращаться колесо.</p>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="_images/Рисунок122.png"><img alt="Лаб4" src="_images/Рисунок122.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 12</span><a class="headerlink" href="#id12" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем на 17.5 мм. Все эти размеры потом отразятся на размерах колеса, ведь необходимо будет учесть все зазоры, чтобы колесо свободно крутилось.</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="_images/Рисунок132.png"><img alt="Лаб4" src="_images/Рисунок132.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 13</span><a class="headerlink" href="#id13" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Ребра жесткости</p></li>
+</ol>
+<p>Это довольно интересный элемент при изготовлении детали, позволяющий значительно экономить вес, а следовательно материал, а также сделать деталь более компактной. Текущая деталь имеет толщину 3 мм, и при таких размерах будет изгибаться, что в данной ситуации не нужно.</p>
+<p>Создаем эскиз на выделенной плоскости.</p>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="_images/Рисунок142.png"><img alt="Лаб4" src="_images/Рисунок142.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 14</span><a class="headerlink" href="#id14" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Проецируем контур и делаем смещение во внутрь на 0.5 мм, так как ребра будем делать толщиной 1 мм. Далее наглядно будет видно почему.</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="_images/Рисунок152.png"><img alt="Лаб4" src="_images/Рисунок152.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 15</span><a class="headerlink" href="#id15" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Делаем перекрестье подобным образом.</p>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="_images/Рисунок162.png"><img alt="Лаб4" src="_images/Рисунок162.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 16</span><a class="headerlink" href="#id16" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>И проводим отрезок.</p>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="_images/Рисунок172.png"><img alt="Лаб4" src="_images/Рисунок172.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 17</span><a class="headerlink" href="#id17" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Перпендикулярно, на расстоянии 8 мм от центра окружности.</p>
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="_images/Рисунок182.png"><img alt="Лаб4" src="_images/Рисунок182.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 18</span><a class="headerlink" href="#id18" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Обрезаем выделенные отрезки с помощью инструмента “Trim”, чтобы они не мешали при проведении ребер.</p>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="_images/Рисунок192.png"><img alt="Лаб4" src="_images/Рисунок192.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 19</span><a class="headerlink" href="#id19" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Можно удалить еще некоторые отрезки и окружности, чтобы в итоге получилось так.</p>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="_images/Рисунок201.png"><img alt="Лаб4" src="_images/Рисунок201.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 20</span><a class="headerlink" href="#id20" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Подтверждаем эскиз и строим ребра жесткости с помощью инструмента “Rib”.</p>
+<ol class="arabic simple">
+<li><p>Нажимаем на иконку инструмента в верхнем тулбаре.</p></li>
+<li><p>Выделяем все необходимые отрезки, как показано на картинке.</p></li>
+</ol>
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="_images/Рисунок213.png"><img alt="Лаб4" src="_images/Рисунок213.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 21</span><a class="headerlink" href="#id21" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>Нажимаем на пункт выбора деталей.</p></li>
+<li><p>Выбираем нашу текущую деталь, нажатием ЛКМ на нее.</p></li>
+<li><p>Задаем расстояние 1 мм.</p></li>
+</ol>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="_images/Рисунок221.png"><img alt="Лаб4" src="_images/Рисунок221.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 22</span><a class="headerlink" href="#id22" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Нажимаем на треугольник рядом с надписью “Parallel to sketch plane” (если в этом месте у вас написано ” Normal to sketch plane”, то оставляем этот пункт).</p>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="_images/Рисунок231.png"><img alt="Лаб4" src="_images/Рисунок231.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 23</span><a class="headerlink" href="#id23" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>И меняем на ”Normal to sketch plane”.</p>
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="_images/Рисунок241.png"><img alt="Лаб4" src="_images/Рисунок241.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 24</span><a class="headerlink" href="#id24" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Несколько фасок размером 2.85мм на следующих ребрах.</p>
+<figure class="align-center" id="id25">
+<a class="reference internal image-reference" href="_images/Рисунок251.png"><img alt="Лаб4" src="_images/Рисунок251.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 25</span><a class="headerlink" href="#id25" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>И сопряжение радиусом 2.3 мм на этих гранях.</p>
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="_images/Рисунок261.png"><img alt="Лаб4" src="_images/Рисунок261.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 26</span><a class="headerlink" href="#id26" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="_images/Рисунок271.png"><img alt="Лаб4" src="_images/Рисунок271.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 27</span><a class="headerlink" href="#id27" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Фаски радиусом 1.5 мм на выходных отверстиях снизу. Верхние два для шляпок потайных винтов, нижнее для компенсации возможных деффектов печати, т. к. через это отверстие будет проходить ось, на которой будет закреплен рычаг подвески.</p>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="_images/Рисунок281.png"><img alt="Лаб4" src="_images/Рисунок281.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 28</span><a class="headerlink" href="#id28" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Сопряжения радиусом 1 мм.</p>
+<figure class="align-center" id="id29">
+<a class="reference internal image-reference" href="_images/Рисунок291.png"><img alt="Лаб4" src="_images/Рисунок291.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 29</span><a class="headerlink" href="#id29" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Опорный рычаг подвески готов.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="lab3.html" class="btn btn-neutral float-left" title="Лабораторная работа №3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Артемий.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
