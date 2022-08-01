@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторная работа №7 &mdash; документация 3Д Моделирование 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="Лабораторная работа №6" href="lab6.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> 3Д Моделирование
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Содержание:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="lab1.html">Лабораторная работа №1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab2.html">Лабораторная работа №2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab3.html">Лабораторная работа №3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab4.html">Лабораторная работа №4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab5.html">Лабораторная работа №5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab6.html">Лабораторная работа №6</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Лабораторная работа №7</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3Д Моделирование</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Лабораторная работа №7</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/lab7.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="o7">
+<h1>Лабораторная работа №7<a class="headerlink" href="#o7" title="Permalink to this heading"></a></h1>
+<p>Создание ведущего колеса</p>
+<p>При разработке гусеничного движителя расчет траков (трак — это составная часть гусеницы) и ведущего колеса - зависимые процессы, и, зачастую, ведущее колесо рассчитывается под уже готовый трак. В данной работе мы не будем производить расчеты, а построим модели по уже рассчитанным эскизам. Однако, если вам будет интересно или в будущем возникнет потребность расчета, то более подобный процесс описан в книге.</p>
+<p>Первым делом создадим плоскость на расстоянии 2 мм от стенки корпуса. Выбираем инструмент «плоскость». Выбираем плоскость, на основе которой будет создана новая плоскость. Задаем расстояние – 2 мм. Иллюстрация на рисунке 1.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/Рисунок120.png"><img alt="Создание плоскости на расстоянии 2 мм" src="_images/Рисунок120.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 1 - Создание плоскости на расстоянии 2 мм</span><a class="headerlink" href="#id1" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Для удобства муфта была скрыта из видимости. Создаем вспомогательную геометрию-окружность с центром в центральной точке отверстия (воспользуйтесь проецированием) и вертикальный отрезок, соединяющий окружность с ее центром, как показано на рисунке 2.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/Рисунок218.png"><img alt="Создание вспомогательной окружности" src="_images/Рисунок218.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 2 - Создание вспомогательной окружности</span><a class="headerlink" href="#id2" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее создадим отрезок, перпендикулярный радиусу, длиной 5 мм. В точке пересечения отрезка и окружности создадим новую окружность, как показано на рисунке 3.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/Рисунок316.png"><img alt="Создание отрезка 5 мм" src="_images/Рисунок316.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 3 - Создание отрезка 5 мм</span><a class="headerlink" href="#id3" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее продлим отрезок от точки пересечения радиуса и перпендикулярного ему отрезка на 2.77 мм, как показано на рисунке 4. Соединим конец этого отрезка с касательной к малой окружности, как показано на рисунке 4.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/Рисунок414.png"><img alt="Построение отрезка" src="_images/Рисунок414.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 4 - Построение отрезка</span><a class="headerlink" href="#id4" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Отразим построенную фигуру относительно радиуса, как показано на рисунке 5.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/Рисунок512.png"><img alt="Отражение фигуры" src="_images/Рисунок512.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 5 - Отражение фигуры</span><a class="headerlink" href="#id5" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее необходимо размножить данную фигуру по всему радиусу. Для этого создаем круговой массив с центром в центральной точке большой окружности, как показано на рисунке 6. Задаем количество элементов – 14, как показано на рисунке 7.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/Рисунок66.png"><img alt="Создание кругового массива" src="_images/Рисунок66.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 6 - Создание кругового массива</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/Рисунок76.png"><img alt="Создание кругового массива" src="_images/Рисунок76.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 7 - Создание кругового массива</span><a class="headerlink" href="#id7" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее необходимо в центре большой окружности создать новую окружность диаметром 22.6 мм, как показано на рисунке 8.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/Рисунок86.png"><img alt="Создание окружности" src="_images/Рисунок86.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 8 - Создание окружности</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем получившуюся фигуру на 3.7 мм, как показано на рисунке 9 – 10.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/Рисунок96.png"><img alt="Выдавливание фигуры" src="_images/Рисунок96.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 9 - Выдавливание фигуры</span><a class="headerlink" href="#id9" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/Рисунок106.png"><img alt="Выдавливание фигуры" src="_images/Рисунок106.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 10 - Выдавливание фигуры</span><a class="headerlink" href="#id10" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем новый эскиз в центре все той же окружности диаметром 27.6 мм, как показано на рисунке 11.</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="_images/Рисунок1110.png"><img alt="Создание окружности" src="_images/Рисунок1110.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 11 - Создание окружности</span><a class="headerlink" href="#id11" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее выдавливаем фигуру на 22.4 мм, как показано на рисунке 12.</p>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="_images/Рисунок126.png"><img alt="Выдавливание фигуры" src="_images/Рисунок126.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 12 - Выдавливание фигуры</span><a class="headerlink" href="#id12" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем новый эскиз на выделенной плоскости. Нам необходимо перенести отверстия с муфты на этот эскиз. Для этого была восстановлена видимость муфты и, с помощью инструмента проекции, спроецированы все 3 отверстия. Далее будет виден выдавливаемый эскиз. Иллюстрация на рисунке 13-14.</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="_images/Рисунок136.png"><img alt="Создание эскиза" src="_images/Рисунок136.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 13 - Создание эскиза</span><a class="headerlink" href="#id13" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="_images/Рисунок146.png"><img alt="Создание эскиза" src="_images/Рисунок146.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 14 - Создание эскиза</span><a class="headerlink" href="#id14" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее выдавливаем фигуру на 20.4мм, как показано на рисунке 15.</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="_images/Рисунок156.png"><img alt="Выдавливание фигуры" src="_images/Рисунок156.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 15 - Выдавливание фигуры</span><a class="headerlink" href="#id15" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее нам необходимо будет построить еще один эскиз, используя проекцию, как показано на рисунке 16.</p>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="_images/Рисунок166.png"><img alt="Создание эскиза проекцией" src="_images/Рисунок166.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 16 - Создание эскиза проекцией</span><a class="headerlink" href="#id16" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем эскиз на 3.7мм, как показано на рисунке 17.</p>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="_images/Рисунок176.png"><img alt="Выдавливание эскиза" src="_images/Рисунок176.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 17 - Выдавливание эскиза</span><a class="headerlink" href="#id17" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем новый эскиз в виде окружностью с центром в цилиндре, показанном на рисунке 18.</p>
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="_images/Рисунок186.png"><img alt="Создание эскиза" src="_images/Рисунок186.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 18 - Создание эскиза</span><a class="headerlink" href="#id18" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем выемку для того, чтобы элементы крепления колеса не выходили за габариты колеса, как показано на рисунке 19.</p>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="_images/Рисунок196.png"><img alt="Создание выемки" src="_images/Рисунок196.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 19 - Создание выемки</span><a class="headerlink" href="#id19" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее необходимо добавить фаски:</p>
+<ol class="arabic simple">
+<li><p>Величиной 8мм;</p></li>
+<li><p>Величиной 5мм.</p></li>
+</ol>
+<p>Иллюстрация показана на рисунке 20.</p>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="_images/Рисунок205.png"><img alt="Создание фасок" src="_images/Рисунок205.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 20 - Создание фасок</span><a class="headerlink" href="#id20" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="lab6.html" class="btn btn-neutral float-left" title="Лабораторная работа №6" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Артемий.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
