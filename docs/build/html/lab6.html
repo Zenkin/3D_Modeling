@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторная работа №6 &mdash; документация 3Д Моделирование 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="Лабораторная работа №5" href="lab5.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> 3Д Моделирование
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Содержание:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="lab1.html">Лабораторная работа №1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab2.html">Лабораторная работа №2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab3.html">Лабораторная работа №3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab4.html">Лабораторная работа №4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab5.html">Лабораторная работа №5</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Лабораторная работа №6</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3Д Моделирование</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Лабораторная работа №6</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/lab6.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="o6">
+<h1>Лабораторная работа №6<a class="headerlink" href="#o6" title="Permalink to this heading"></a></h1>
+<p>Создание муфты и посадочного места под подшипник</p>
+<ol class="arabic simple">
+<li><p>Создание посадочного места под подшипник</p></li>
+</ol>
+<p>Переходим в раздел с моделью корпуса «Body» (Рисунок 1).</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/Рисунок118.png"><img alt="Раздел «Body»" src="_images/Рисунок118.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 1 - Раздел «Body»</span><a class="headerlink" href="#id1" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем эскиз окружности на боковой части корпуса, как показано на рисунке 1. Данное отверстие будет использоваться для упрощения моделирования и последующей центровки осей вращающихся деталей приводного колеса.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/Рисунок216.png"><img alt="Выдавливание эскиза" src="_images/Рисунок216.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 2 - Выдавливание эскиза</span><a class="headerlink" href="#id2" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее выдавливаем эскиз для получения сквозного отверстия, как показано на рисунке 2.</p>
+<p>Далее создадим посадочные отверстия под подшипник, который мы делали ранее.
+Давайте уточним его размеры. При моделировании сложных сборок невозможно запомнить все размеры деталей, поэтому на помощь приходят инструменты показывающие размеры. Перейдем в раздел «RealParts», как показано на рисунке 3.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/Рисунок315.png"><img alt="Раздел «RealParts»" src="_images/Рисунок315.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 3 - Раздел «RealParts»</span><a class="headerlink" href="#id3" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Для того, чтобы узнать величину внешнего диаметра подшипника просто нажимаем ЛКМ по внешнему ободу. В нижнем правом углу будет виден размер: 22мм. Иллюстрация на рисунке 4.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/Рисунок413.png"><img alt="Размер подшипника" src="_images/Рисунок413.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 4 - Размер подшипника</span><a class="headerlink" href="#id4" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Аналогично можно измерять расстояние между различными частями объекта. Чтобы узнать ширину подшипника, последовательно выделяем два кольца, как показано на рисунке 5. Видим размер:7мм. Возвращаемся в раздел «Body».</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/Рисунок511.png"><img alt="Размер подшипника" src="_images/Рисунок511.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 5 - Размер подшипника</span><a class="headerlink" href="#id5" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Для упрощения дальнейшей работы были скрыты детали 1 и 2, напомним, это делается нажатием на пиктограмму «глаза» рядом с именем детали. Создаем окружность диаметром на 0.3 мм больше внешнего диаметра подшипника. Это необходимо для его плотной посадки в напечатанную деталь. Иллюстрация на рисунке 6.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/Рисунок65.png"><img alt="Создание окружности" src="_images/Рисунок65.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 6 - Создание окружности</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем внутрь эскиз на 3.2 мм для того, чтобы осталась стенка толщиной 0.8 мм, этого достаточно в нашей конструкции для упора подшипника. Иллюстрация на рисунках 7–8.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/Рисунок75.png"><img alt="Упор подшипника" src="_images/Рисунок75.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 7 - Упор подшипника</span><a class="headerlink" href="#id7" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/Рисунок85.png"><img alt="Упор подшипника" src="_images/Рисунок85.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 8 - Упор подшипника</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Для того чтобы подшипник поместился полностью, необходимо сделать выступающий бортик. Выдавливаем на 6 мм, итого получается выемка глубиной 9.7мм. Это необходимо, чтобы в полученный паз помимо подшипника вставлялся круглый элемент на передней части шагового двигателя (рисунок 10), который как раз 22 мм в диаметре и 2 мм высотой.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/Рисунок95.png"><img alt="Посадочное место под подшипник" src="_images/Рисунок95.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 9 - Посадочное место под подшипник</span><a class="headerlink" href="#id9" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/Рисунок105.png"><img alt="Выпирающий элемент двигателя" src="_images/Рисунок105.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 10 - Выпирающий элемент двигателя</span><a class="headerlink" href="#id10" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Создание муфты</p></li>
+</ol>
+<p>Муфта позволит просто соединить вал двигателя и ведущее колесо, также это позволит упростить печать. Необходимо выделить плоскость и на ней создать эскиз. Центр окружностей эскиза совпадает с центром ранее созданного отверстия. Иллюстрация на рисунках 11–12.</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="_images/Рисунок119.png"><img alt="Выделенная плоскость" src="_images/Рисунок119.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 11 - Выделенная плоскость</span><a class="headerlink" href="#id11" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="_images/Рисунок125.png"><img alt="Эскиз на плоскости" src="_images/Рисунок125.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 12 - Эскиз на плоскости</span><a class="headerlink" href="#id12" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее необходимо выдавить созданный нами эскиз на 6 мм, как показано на рисунке 13.</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="_images/Рисунок135.png"><img alt="Выдавливание эскиза" src="_images/Рисунок135.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 13 - Выдавливание эскиза</span><a class="headerlink" href="#id13" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем новый эскиз на выделенной плоскости, которая показана на рисунке 14. Для упрощения дальнейшей работы было отключено отображение детали корпуса.</p>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="_images/Рисунок145.png"><img alt="Выделенный эскиз" src="_images/Рисунок145.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 14 - Выделенный эскиз</span><a class="headerlink" href="#id14" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее необходимо построить хорду с точным размером 3.13 мм, горизонтально, как показано на рисунке 15.</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="_images/Рисунок155.png"><img alt="Построение хорды" src="_images/Рисунок155.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 15 - Построение хорды</span><a class="headerlink" href="#id15" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее необходимо выдавить эскиз на 12 мм, как показано на рисунке 16. Обратите внимание, внутренний профиль не должен быть окружностью.</p>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="_images/Рисунок165.png"><img alt="Выдавливание эскиза" src="_images/Рисунок165.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 16 - Выдавливание эскиза</span><a class="headerlink" href="#id16" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создадим новый эскиз на плоскости созданной детали, как показано на рисунке 17.</p>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="_images/Рисунок175.png"><img alt="Создание эскиза" src="_images/Рисунок175.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 17 - Создание эскиза</span><a class="headerlink" href="#id17" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем, как показано на рисунке 18, чтобы внутри осталось отверстие.</p>
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="_images/Рисунок185.png"><img alt="Выдавливание эскиза" src="_images/Рисунок185.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 18 - Выдавливание эскиза</span><a class="headerlink" href="#id18" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее, на получившейся детали необходимо создать эскиз в виде окружности диаметром 16 мм из центра детали. На данной окружности разместить три окружности по кругу диаметром 3.2 мм, как показано на рисунке 19. Рекомендуется использовать круговой массив.</p>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="_images/Рисунок195.png"><img alt="Создание эскиза на плоскости" src="_images/Рисунок195.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 19 - Создание эскиза на плоскости</span><a class="headerlink" href="#id19" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем эскиз на 5мм для получения сквозных отверстий, как показано на рисунке 20.</p>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="_images/Рисунок204.png"><img alt="Выдавливание эскиза" src="_images/Рисунок204.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 20 - Выдавливание эскиза</span><a class="headerlink" href="#id20" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее выделяем плоскость, указанную на рисунке 21, и создаем эскиз.</p>
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="_images/Рисунок217.png"><img alt="Создание эскиза на выделенной плоскости" src="_images/Рисунок217.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 21 - Создание эскиза на выделенной плоскости</span><a class="headerlink" href="#id21" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Нам необходимо сделать выемки под гайки м3.</p>
+<ol class="arabic simple">
+<li><p>Нажимаем на стрелочку вниз рядом с инструментом для создания многоугольников;</p></li>
+<li><p>Нажимаем верхний инструмент (многоугольник, описанный вписанной окружностью «Inscribed polygon»).</p></li>
+</ol>
+<p>Иллюстрация показана на рисунке 22.</p>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="_images/Рисунок223.png"><img alt="Инструменты для создания многоугольника" src="_images/Рисунок223.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 22 - Инструменты для создания многоугольника</span><a class="headerlink" href="#id22" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Для создания многоугольника нажимаем в центре верхней окружности (обратите внимание на положение камеры по ориентационному кубу в верхней правой части экрана).
+После того, как разместите центр многоугольника, отводите мышку для задания примерного размера многоугольника (точный размер 5.7мм), нажимаем ЛКМ. Затем, двигая мышкой влево-вправо, задайте количество углов - 6. Если не получилось задать нужные параметры, не удаляйте многоугольник, далее можно будет точно задать все параметры. Иллюстрация приведена на рисунке 23.</p>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="_images/Рисунок233.png"><img alt="Создание эскиза гайки" src="_images/Рисунок233.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 23 - Создание эскиза гайки</span><a class="headerlink" href="#id23" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Теперь зададим горизонтальную зависимость для нижней стороны многоугольника. Нажимаем на клавиатуре “H”, затем на нижнюю сторону шестиугольника, как показано на рисунке 24.</p>
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="_images/Рисунок243.png"><img alt="Создание горизонтальной зависимости" src="_images/Рисунок243.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 24 - Создание горизонтальной зависимости</span><a class="headerlink" href="#id24" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее с помощью массива создаем еще 2 шестиугольника как показано на рисунке 25.</p>
+<figure class="align-center" id="id25">
+<a class="reference internal image-reference" href="_images/Рисунок253.png"><img alt="Создание массива из шестиугольников" src="_images/Рисунок253.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 25 - Создание массива из шестиугольников</span><a class="headerlink" href="#id25" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем эскиз на 3 мм, как показано на рисунке 26.</p>
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="_images/Рисунок263.png"><img alt="Выдавливание эскиза" src="_images/Рисунок263.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 26 - Выдавливание эскиза</span><a class="headerlink" href="#id26" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Завершающим этапом создания муфты будет добавление сопряжения радиусом 10 мм и фаски длинной 1 мм, как показано на рисунке 27.</p>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="_images/Рисунок273.png"><img alt="Добавление сопряжения и фаски" src="_images/Рисунок273.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 27 - Добавление сопряжения и фаски</span><a class="headerlink" href="#id27" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="lab5.html" class="btn btn-neutral float-left" title="Лабораторная работа №5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Артемий.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
