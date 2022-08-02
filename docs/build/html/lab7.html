@@ -52,6 +52,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lab9.html">Лабораторная работа №9</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lab10.html">Лабораторная работа №10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lab11.html">Лабораторная работа №11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab12.html">Лабораторная работа №12</a></li>
 </ul>
 
         </div>
@@ -84,130 +85,130 @@
 <p>При разработке гусеничного движителя расчет траков (трак — это составная часть гусеницы) и ведущего колеса - зависимые процессы, и, зачастую, ведущее колесо рассчитывается под уже готовый трак. В данной работе мы не будем производить расчеты, а построим модели по уже рассчитанным эскизам. Однако, если вам будет интересно или в будущем возникнет потребность расчета, то более подобный процесс описан в книге.</p>
 <p>Первым делом создадим плоскость на расстоянии 2 мм от стенки корпуса. Выбираем инструмент «плоскость». Выбираем плоскость, на основе которой будет создана новая плоскость. Задаем расстояние – 2 мм. Иллюстрация на рисунке 1.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/Рисунок127.png"><img alt="Создание плоскости на расстоянии 2 мм" src="_images/Рисунок127.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок129.png"><img alt="Создание плоскости на расстоянии 2 мм" src="_images/Рисунок129.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 1 - Создание плоскости на расстоянии 2 мм</span><a class="headerlink" href="#id1" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Для удобства муфта была скрыта из видимости. Создаем вспомогательную геометрию-окружность с центром в центральной точке отверстия (воспользуйтесь проецированием) и вертикальный отрезок, соединяющий окружность с ее центром, как показано на рисунке 2.</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/Рисунок219.png"><img alt="Создание вспомогательной окружности" src="_images/Рисунок219.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок220.png"><img alt="Создание вспомогательной окружности" src="_images/Рисунок220.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 2 - Создание вспомогательной окружности</span><a class="headerlink" href="#id2" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Далее создадим отрезок, перпендикулярный радиусу, длиной 5 мм. В точке пересечения отрезка и окружности создадим новую окружность, как показано на рисунке 3.</p>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/Рисунок317.png"><img alt="Создание отрезка 5 мм" src="_images/Рисунок317.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок318.png"><img alt="Создание отрезка 5 мм" src="_images/Рисунок318.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 3 - Создание отрезка 5 мм</span><a class="headerlink" href="#id3" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Далее продлим отрезок от точки пересечения радиуса и перпендикулярного ему отрезка на 2.77 мм, как показано на рисунке 4. Соединим конец этого отрезка с касательной к малой окружности, как показано на рисунке 4.</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/Рисунок415.png"><img alt="Построение отрезка" src="_images/Рисунок415.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок416.png"><img alt="Построение отрезка" src="_images/Рисунок416.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 4 - Построение отрезка</span><a class="headerlink" href="#id4" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Отразим построенную фигуру относительно радиуса, как показано на рисунке 5.</p>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="_images/Рисунок513.png"><img alt="Отражение фигуры" src="_images/Рисунок513.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок514.png"><img alt="Отражение фигуры" src="_images/Рисунок514.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 5 - Отражение фигуры</span><a class="headerlink" href="#id5" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Далее необходимо размножить данную фигуру по всему радиусу. Для этого создаем круговой массив с центром в центральной точке большой окружности, как показано на рисунке 6. Задаем количество элементов – 14, как показано на рисунке 7.</p>
 <figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="_images/Рисунок67.png"><img alt="Создание кругового массива" src="_images/Рисунок67.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок68.png"><img alt="Создание кругового массива" src="_images/Рисунок68.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 6 - Создание кругового массива</span><a class="headerlink" href="#id6" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="_images/Рисунок77.png"><img alt="Создание кругового массива" src="_images/Рисунок77.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок78.png"><img alt="Создание кругового массива" src="_images/Рисунок78.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 7 - Создание кругового массива</span><a class="headerlink" href="#id7" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Далее необходимо в центре большой окружности создать новую окружность диаметром 22.6 мм, как показано на рисунке 8.</p>
 <figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="_images/Рисунок87.png"><img alt="Создание окружности" src="_images/Рисунок87.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок88.png"><img alt="Создание окружности" src="_images/Рисунок88.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 8 - Создание окружности</span><a class="headerlink" href="#id8" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Выдавливаем получившуюся фигуру на 3.7 мм, как показано на рисунке 9 – 10.</p>
 <figure class="align-center" id="id9">
-<a class="reference internal image-reference" href="_images/Рисунок97.png"><img alt="Выдавливание фигуры" src="_images/Рисунок97.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок98.png"><img alt="Выдавливание фигуры" src="_images/Рисунок98.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 9 - Выдавливание фигуры</span><a class="headerlink" href="#id9" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id10">
-<a class="reference internal image-reference" href="_images/Рисунок107.png"><img alt="Выдавливание фигуры" src="_images/Рисунок107.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок108.png"><img alt="Выдавливание фигуры" src="_images/Рисунок108.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 10 - Выдавливание фигуры</span><a class="headerlink" href="#id10" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Создаем новый эскиз в центре все той же окружности диаметром 27.6 мм, как показано на рисунке 11.</p>
 <figure class="align-center" id="id11">
-<a class="reference internal image-reference" href="_images/Рисунок1111.png"><img alt="Создание окружности" src="_images/Рисунок1111.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок1112.png"><img alt="Создание окружности" src="_images/Рисунок1112.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 11 - Создание окружности</span><a class="headerlink" href="#id11" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Далее выдавливаем фигуру на 22.4 мм, как показано на рисунке 12.</p>
 <figure class="align-center" id="id12">
-<a class="reference internal image-reference" href="_images/Рисунок128.png"><img alt="Выдавливание фигуры" src="_images/Рисунок128.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок1210.png"><img alt="Выдавливание фигуры" src="_images/Рисунок1210.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 12 - Выдавливание фигуры</span><a class="headerlink" href="#id12" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Создаем новый эскиз на выделенной плоскости. Нам необходимо перенести отверстия с муфты на этот эскиз. Для этого была восстановлена видимость муфты и, с помощью инструмента проекции, спроецированы все 3 отверстия. Далее будет виден выдавливаемый эскиз. Иллюстрация на рисунке 13-14.</p>
 <figure class="align-center" id="id13">
-<a class="reference internal image-reference" href="_images/Рисунок137.png"><img alt="Создание эскиза" src="_images/Рисунок137.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок138.png"><img alt="Создание эскиза" src="_images/Рисунок138.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 13 - Создание эскиза</span><a class="headerlink" href="#id13" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id14">
-<a class="reference internal image-reference" href="_images/Рисунок147.png"><img alt="Создание эскиза" src="_images/Рисунок147.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок148.png"><img alt="Создание эскиза" src="_images/Рисунок148.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 14 - Создание эскиза</span><a class="headerlink" href="#id14" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Далее выдавливаем фигуру на 20.4мм, как показано на рисунке 15.</p>
 <figure class="align-center" id="id15">
-<a class="reference internal image-reference" href="_images/Рисунок157.png"><img alt="Выдавливание фигуры" src="_images/Рисунок157.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок158.png"><img alt="Выдавливание фигуры" src="_images/Рисунок158.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 15 - Выдавливание фигуры</span><a class="headerlink" href="#id15" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Далее нам необходимо будет построить еще один эскиз, используя проекцию, как показано на рисунке 16.</p>
 <figure class="align-center" id="id16">
-<a class="reference internal image-reference" href="_images/Рисунок167.png"><img alt="Создание эскиза проекцией" src="_images/Рисунок167.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок168.png"><img alt="Создание эскиза проекцией" src="_images/Рисунок168.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 16 - Создание эскиза проекцией</span><a class="headerlink" href="#id16" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Выдавливаем эскиз на 3.7мм, как показано на рисунке 17.</p>
 <figure class="align-center" id="id17">
-<a class="reference internal image-reference" href="_images/Рисунок177.png"><img alt="Выдавливание эскиза" src="_images/Рисунок177.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок178.png"><img alt="Выдавливание эскиза" src="_images/Рисунок178.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 17 - Выдавливание эскиза</span><a class="headerlink" href="#id17" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Создаем новый эскиз в виде окружностью с центром в цилиндре, показанном на рисунке 18.</p>
 <figure class="align-center" id="id18">
-<a class="reference internal image-reference" href="_images/Рисунок187.png"><img alt="Создание эскиза" src="_images/Рисунок187.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок188.png"><img alt="Создание эскиза" src="_images/Рисунок188.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 18 - Создание эскиза</span><a class="headerlink" href="#id18" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
 <p>Создаем выемку для того, чтобы элементы крепления колеса не выходили за габариты колеса, как показано на рисунке 19.</p>
 <figure class="align-center" id="id19">
-<a class="reference internal image-reference" href="_images/Рисунок197.png"><img alt="Создание выемки" src="_images/Рисунок197.png" style="width: 672.0px; height: 378.0px;" /></a>
+<a class="reference internal image-reference" href="_images/Рисунок198.png"><img alt="Создание выемки" src="_images/Рисунок198.png" style="width: 672.0px; height: 378.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Рисунок 19 - Создание выемки</span><a class="headerlink" href="#id19" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
