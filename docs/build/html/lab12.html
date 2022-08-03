@@ -276,6 +276,518 @@
 <p><span class="caption-text">Рисунок 24</span><a class="headerlink" href="#id24" title="Постоянная ссылка на рисунок"></a></p>
 </figcaption>
 </figure>
+<p>При таком переходе к детали сверху появляется окно</p>
+<ol class="arabic simple">
+<li><p>При нажатии на крестик из видимости пhопадут все детали? не находящиеся в данном разделе с деталями.</p></li>
+<li><p>При нажатии “Go to assembly” вы вернетесь к сборке.</p></li>
+</ol>
+<figure class="align-center" id="id25">
+<a class="reference internal image-reference" href="_images/Рисунок255.png"><img alt="Лаб12" src="_images/Рисунок255.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 25</span><a class="headerlink" href="#id25" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="_images/Рисунок265.png"><img alt="Лаб12" src="_images/Рисунок265.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 26</span><a class="headerlink" href="#id26" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем эскиз и проецируем отверстия шагового двигателя на него.</p>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="_images/Рисунок274.png"><img alt="Лаб12" src="_images/Рисунок274.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 27</span><a class="headerlink" href="#id27" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>В итоге должен получиться такой эскиз, как на рисунке 28 (необходимо построить окружности со смещением 2мм).</p>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="_images/Рисунок283.png"><img alt="Лаб12" src="_images/Рисунок283.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 28</span><a class="headerlink" href="#id28" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Выдавливаем на 10мм, как показано на рисунке 29.</p>
+<figure class="align-center" id="id29">
+<a class="reference internal image-reference" href="_images/Рисунок293.png"><img alt="Лаб12" src="_images/Рисунок293.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 29</span><a class="headerlink" href="#id29" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Из того же эскиза выдавливаем внутренние сквозные отверстия, так же на 10мм (рисунок 30).</p>
+<figure class="align-center" id="id30">
+<a class="reference internal image-reference" href="_images/Рисунок302.png"><img alt="Лаб12" src="_images/Рисунок302.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 30</span><a class="headerlink" href="#id30" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>И добавляем фаски 1мм.</p>
+<figure class="align-center" id="id31">
+<a class="reference internal image-reference" href="_images/Рисунок3110.png"><img alt="Лаб12" src="_images/Рисунок3110.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 31 - Добавление фасок</span><a class="headerlink" href="#id31" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Вернемся в сборку и вставим в нее 3 детали “Bushing”, как показано на рисунке 32.</p>
+<figure class="align-center" id="id32">
+<a class="reference internal image-reference" href="_images/Рисунок322.png"><img alt="Лаб12" src="_images/Рисунок322.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 32</span><a class="headerlink" href="#id32" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Теперь необходимо зафиксировать эти элементы.</p>
+<p>Выбираем создание зависимости “Revolute mate” и создаем зависимость между показанными окружностями деталей (Рисунок 33).</p>
+<figure class="align-center" id="id33">
+<a class="reference internal image-reference" href="_images/Рисунок331.png"><img alt="Лаб12" src="_images/Рисунок331.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 33</span><a class="headerlink" href="#id33" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Чтобы серая деталь не вращалась, устанавливаем ограничение, нажимаем в пункте “Limits” и выставляем 0 градусов, как показано на рисунке 34.</p>
+<figure class="align-center" id="id34">
+<a class="reference internal image-reference" href="_images/Рисунок341.png"><img alt="Лаб12" src="_images/Рисунок341.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 34</span><a class="headerlink" href="#id34" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Аналогичным образом зафиксируем 2 оставшиеся детали. Итого добавляется 3 новых зависимости.</p>
+<p>Теперь добавим в сборку детали для стягивания нижних половинок корпуса в количестве 4х штук (рисунок 35).</p>
+<figure class="align-center" id="id35">
+<a class="reference internal image-reference" href="_images/Рисунок351.png"><img alt="Лаб12" src="_images/Рисунок351.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 35</span><a class="headerlink" href="#id35" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Задаем зависимость для одной детали как показано на рисунках 36-38.</p>
+<figure class="align-center" id="id36">
+<a class="reference internal image-reference" href="_images/Рисунок361.png"><img alt="Лаб12" src="_images/Рисунок361.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 36</span><a class="headerlink" href="#id36" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id37">
+<a class="reference internal image-reference" href="_images/Рисунок371.png"><img alt="Лаб12" src="_images/Рисунок371.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 37</span><a class="headerlink" href="#id37" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id38">
+<a class="reference internal image-reference" href="_images/Рисунок381.png"><img alt="Лаб12" src="_images/Рисунок381.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 38</span><a class="headerlink" href="#id38" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Деталь зафиксирована, аналогично фиксируем остальные детали.</p>
+<figure class="align-center" id="id39">
+<a class="reference internal image-reference" href="_images/Рисунок391.png"><img alt="Лаб12" src="_images/Рисунок391.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 39</span><a class="headerlink" href="#id39" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>В итоге должно получиться так, как показано на рисунке 40.</p>
+<figure class="align-center" id="id40">
+<a class="reference internal image-reference" href="_images/Рисунок401.png"><img alt="Лаб12" src="_images/Рисунок401.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 40</span><a class="headerlink" href="#id40" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Следующим шагом добавим в сборку колесо с рычагом подвески.</p>
+<figure class="align-center" id="id41">
+<a class="reference internal image-reference" href="_images/Рисунок4110.png"><img alt="Лаб12" src="_images/Рисунок4110.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 41</span><a class="headerlink" href="#id41" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id42">
+<a class="reference internal image-reference" href="_images/Рисунок421.png"><img alt="Лаб12" src="_images/Рисунок421.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 42</span><a class="headerlink" href="#id42" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id43">
+<a class="reference internal image-reference" href="_images/Рисунок431.png"><img alt="Лаб12" src="_images/Рисунок431.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 43</span><a class="headerlink" href="#id43" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id44">
+<a class="reference internal image-reference" href="_images/Рисунок441.png"><img alt="Лаб12" src="_images/Рисунок441.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 44</span><a class="headerlink" href="#id44" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id45">
+<a class="reference internal image-reference" href="_images/Рисунок451.png"><img alt="Лаб12" src="_images/Рисунок451.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 45</span><a class="headerlink" href="#id45" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id46">
+<a class="reference internal image-reference" href="_images/Рисунок461.png"><img alt="Лаб12" src="_images/Рисунок461.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 46</span><a class="headerlink" href="#id46" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id47">
+<a class="reference internal image-reference" href="_images/Рисунок471.png"><img alt="Лаб12" src="_images/Рисунок471.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 47</span><a class="headerlink" href="#id47" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Задаем все необходимые взаимосвязи, чтобы закрепить первый рычаг подвески (рисунок 48).</p>
+<figure class="align-center" id="id48">
+<a class="reference internal image-reference" href="_images/Рисунок481.png"><img alt="Лаб12" src="_images/Рисунок481.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 48</span><a class="headerlink" href="#id48" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее необходимо установить еще 2 аналогичных объекта, для упрощения воспользуйтесь следующей функцией: сначала выделите 3 детали как показано на рисунке 48.</p>
+<figure class="align-center" id="id49">
+<a class="reference internal image-reference" href="_images/Рисунок491.png"><img alt="Лаб12" src="_images/Рисунок491.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 49</span><a class="headerlink" href="#id49" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id50">
+<a class="reference internal image-reference" href="_images/Рисунок501.png"><img alt="Лаб12" src="_images/Рисунок501.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 50</span><a class="headerlink" href="#id50" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id51">
+<a class="reference internal image-reference" href="_images/Рисунок518.png"><img alt="Лаб12" src="_images/Рисунок518.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 51</span><a class="headerlink" href="#id51" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Таким образом мы добавили 3 составных элемента в сборку максимально просто.</p>
+<figure class="align-center" id="id52">
+<a class="reference internal image-reference" href="_images/Рисунок521.png"><img alt="Лаб12" src="_images/Рисунок521.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 52</span><a class="headerlink" href="#id52" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id53">
+<a class="reference internal image-reference" href="_images/Рисунок531.png"><img alt="Лаб12" src="_images/Рисунок531.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 53</span><a class="headerlink" href="#id53" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Устанавливаем еще один элемент.</p>
+<figure class="align-center" id="id54">
+<a class="reference internal image-reference" href="_images/Рисунок541.png"><img alt="Лаб12" src="_images/Рисунок541.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 54</span><a class="headerlink" href="#id54" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Вернемся к моделированию, далее, следуя картинкам, создайте новую деталь (рисунки 55-64).</p>
+<figure class="align-center" id="id55">
+<a class="reference internal image-reference" href="_images/Рисунок551.png"><img alt="Лаб12" src="_images/Рисунок551.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 55</span><a class="headerlink" href="#id55" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id56">
+<a class="reference internal image-reference" href="_images/Рисунок561.png"><img alt="Лаб12" src="_images/Рисунок561.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 56</span><a class="headerlink" href="#id56" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id57">
+<a class="reference internal image-reference" href="_images/Рисунок571.png"><img alt="Лаб12" src="_images/Рисунок571.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 57</span><a class="headerlink" href="#id57" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id58">
+<a class="reference internal image-reference" href="_images/Рисунок581.png"><img alt="Лаб12" src="_images/Рисунок581.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 58</span><a class="headerlink" href="#id58" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id59">
+<a class="reference internal image-reference" href="_images/Рисунок591.png"><img alt="Лаб12" src="_images/Рисунок591.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 59</span><a class="headerlink" href="#id59" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id60">
+<a class="reference internal image-reference" href="_images/Рисунок60.png"><img alt="Лаб12" src="_images/Рисунок60.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 60</span><a class="headerlink" href="#id60" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id61">
+<a class="reference internal image-reference" href="_images/Рисунок612.png"><img alt="Лаб12" src="_images/Рисунок612.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 61</span><a class="headerlink" href="#id61" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id62">
+<a class="reference internal image-reference" href="_images/Рисунок621.png"><img alt="Лаб12" src="_images/Рисунок621.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 62</span><a class="headerlink" href="#id62" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id63">
+<a class="reference internal image-reference" href="_images/Рисунок631.png"><img alt="Лаб12" src="_images/Рисунок631.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 63</span><a class="headerlink" href="#id63" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id64">
+<a class="reference internal image-reference" href="_images/Рисунок641.png"><img alt="Лаб12" src="_images/Рисунок641.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 64</span><a class="headerlink" href="#id64" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Вернемся к редактированию сборки, добавим только что созданный элемент.</p>
+<figure class="align-center" id="id65">
+<a class="reference internal image-reference" href="_images/Рисунок651.png"><img alt="Лаб12" src="_images/Рисунок651.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 65</span><a class="headerlink" href="#id65" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Добавим ведущее колесо вместе с муфтой (Рисунок 66).</p>
+<figure class="align-center" id="id66">
+<a class="reference internal image-reference" href="_images/Рисунок661.png"><img alt="Лаб12" src="_images/Рисунок661.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 66</span><a class="headerlink" href="#id66" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id67">
+<a class="reference internal image-reference" href="_images/Рисунок671.png"><img alt="Лаб12" src="_images/Рисунок671.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 67</span><a class="headerlink" href="#id67" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Добавляем еще 1 колесо (рисунки 68, 69).</p>
+<figure class="align-center" id="id68">
+<a class="reference internal image-reference" href="_images/Рисунок681.png"><img alt="Лаб12" src="_images/Рисунок681.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 68</span><a class="headerlink" href="#id68" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id69">
+<a class="reference internal image-reference" href="_images/Рисунок691.png"><img alt="Лаб12" src="_images/Рисунок691.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 69</span><a class="headerlink" href="#id69" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Для того чтобы сделать гусеницу которая будет “облегать” все колеса нужен эскиз по которому “лягут” траки (рисунок 70). Переходим в раздел “Suspension”, создаем эскиз на базовой плоскости как показано на рисунке. Создайте случайный вспомогательный прямоугольник примерно схожих размеров.</p>
+<figure class="align-center" id="id70">
+<a class="reference internal image-reference" href="_images/Рисунок70.png"><img alt="Лаб12" src="_images/Рисунок70.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 70</span><a class="headerlink" href="#id70" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Нужно вставить эскиз ранее нарисованного прямоугольника в сборку, для этого нужно активировать такую возможность нажатием на иконку показанную на рисунке 71.</p>
+<figure class="align-center" id="id71">
+<a class="reference internal image-reference" href="_images/Рисунок712.png"><img alt="Лаб12" src="_images/Рисунок712.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 71</span><a class="headerlink" href="#id71" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id72">
+<a class="reference internal image-reference" href="_images/Рисунок721.png"><img alt="Лаб12" src="_images/Рисунок721.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 72</span><a class="headerlink" href="#id72" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Позиционируем таким образом чтобы он находился между колесами и плоскостью корпуса.</p>
+<p>Переходим в редактирование эскиза из сборки и с помощью проектирования строим такой эскиз (рисунок 73, 74).</p>
+<figure class="align-center" id="id73">
+<a class="reference internal image-reference" href="_images/Рисунок731.png"><img alt="Лаб12" src="_images/Рисунок731.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 73</span><a class="headerlink" href="#id73" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id74">
+<a class="reference internal image-reference" href="_images/Рисунок741.png"><img alt="Лаб12" src="_images/Рисунок741.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 74</span><a class="headerlink" href="#id74" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Создаем эскиз на базовой плоскости (рисунки 75-86).</p>
+<figure class="align-center" id="id75">
+<a class="reference internal image-reference" href="_images/Рисунок751.png"><img alt="Лаб12" src="_images/Рисунок751.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 75</span><a class="headerlink" href="#id75" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id76">
+<a class="reference internal image-reference" href="_images/Рисунок761.png"><img alt="Лаб12" src="_images/Рисунок761.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 76</span><a class="headerlink" href="#id76" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id77">
+<a class="reference internal image-reference" href="_images/Рисунок771.png"><img alt="Лаб12" src="_images/Рисунок771.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 77</span><a class="headerlink" href="#id77" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id78">
+<a class="reference internal image-reference" href="_images/Рисунок781.png"><img alt="Лаб12" src="_images/Рисунок781.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 78</span><a class="headerlink" href="#id78" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id79">
+<a class="reference internal image-reference" href="_images/Рисунок791.png"><img alt="Лаб12" src="_images/Рисунок791.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 79</span><a class="headerlink" href="#id79" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id80">
+<a class="reference internal image-reference" href="_images/Рисунок80.png"><img alt="Лаб12" src="_images/Рисунок80.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 80</span><a class="headerlink" href="#id80" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id81">
+<a class="reference internal image-reference" href="_images/Рисунок812.png"><img alt="Лаб12" src="_images/Рисунок812.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 81</span><a class="headerlink" href="#id81" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id82">
+<a class="reference internal image-reference" href="_images/Рисунок821.png"><img alt="Лаб12" src="_images/Рисунок821.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 82</span><a class="headerlink" href="#id82" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id83">
+<a class="reference internal image-reference" href="_images/Рисунок831.png"><img alt="Лаб12" src="_images/Рисунок831.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 83</span><a class="headerlink" href="#id83" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id84">
+<a class="reference internal image-reference" href="_images/Рисунок841.png"><img alt="Лаб12" src="_images/Рисунок841.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 84</span><a class="headerlink" href="#id84" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id85">
+<a class="reference internal image-reference" href="_images/Рисунок851.png"><img alt="Лаб12" src="_images/Рисунок851.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 85</span><a class="headerlink" href="#id85" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id86">
+<a class="reference internal image-reference" href="_images/Рисунок861.png"><img alt="Лаб12" src="_images/Рисунок861.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 86</span><a class="headerlink" href="#id86" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Вернемся к эскизу на рисунке 84, его необходимо немного сдвинуть так, чтобы нижняя горизонтальная линия проходила через центральную точку.</p>
+<figure class="align-center" id="id87">
+<a class="reference internal image-reference" href="_images/Рисунок871.png"><img alt="Лаб12" src="_images/Рисунок871.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 87</span><a class="headerlink" href="#id87" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id88">
+<a class="reference internal image-reference" href="_images/Рисунок881.png"><img alt="Лаб12" src="_images/Рисунок881.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 88</span><a class="headerlink" href="#id88" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>С помощью инструмента смещения создаем внутренний эскиз со смещением 0.5 мм (рисунки 89-91).</p>
+<figure class="align-center" id="id89">
+<a class="reference internal image-reference" href="_images/Рисунок891.png"><img alt="Лаб12" src="_images/Рисунок891.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 89</span><a class="headerlink" href="#id89" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id90">
+<a class="reference internal image-reference" href="_images/Рисунок90.png"><img alt="Лаб12" src="_images/Рисунок90.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 90</span><a class="headerlink" href="#id90" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id91">
+<a class="reference internal image-reference" href="_images/Рисунок912.png"><img alt="Лаб12" src="_images/Рисунок912.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 91</span><a class="headerlink" href="#id91" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее, чтобы получить гусеницу, используем создание массива по линии.
+Не забываем переключить в режим добавления элементов для того, чтобы уменьшить количество деталей и упростить дальнейшую работу. Вставляем гусеницу в сборку (рисунки 92-95).</p>
+<figure class="align-center" id="id92">
+<a class="reference internal image-reference" href="_images/Рисунок921.png"><img alt="Лаб12" src="_images/Рисунок921.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 92</span><a class="headerlink" href="#id92" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id93">
+<a class="reference internal image-reference" href="_images/Рисунок931.png"><img alt="Лаб12" src="_images/Рисунок931.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 93</span><a class="headerlink" href="#id93" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id94">
+<a class="reference internal image-reference" href="_images/Рисунок941.png"><img alt="Лаб12" src="_images/Рисунок941.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 94</span><a class="headerlink" href="#id94" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id95">
+<a class="reference internal image-reference" href="_images/Рисунок951.png"><img alt="Лаб12" src="_images/Рисунок951.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 95</span><a class="headerlink" href="#id95" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<p>Далее на основе полученных навыков достройте модель до целой. Ниже представлены изображения того, что должно получиться в итоге (рисунки 96-103).</p>
+<figure class="align-center" id="id96">
+<a class="reference internal image-reference" href="_images/Рисунок961.png"><img alt="Лаб12" src="_images/Рисунок961.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 96</span><a class="headerlink" href="#id96" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id97">
+<a class="reference internal image-reference" href="_images/Рисунок971.png"><img alt="Лаб12" src="_images/Рисунок971.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 97</span><a class="headerlink" href="#id97" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id98">
+<a class="reference internal image-reference" href="_images/Рисунок981.png"><img alt="Лаб12" src="_images/Рисунок981.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 98</span><a class="headerlink" href="#id98" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id99">
+<a class="reference internal image-reference" href="_images/Рисунок991.png"><img alt="Лаб12" src="_images/Рисунок991.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 99</span><a class="headerlink" href="#id99" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id100">
+<a class="reference internal image-reference" href="_images/Рисунок100.png"><img alt="Лаб12" src="_images/Рисунок100.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 100</span><a class="headerlink" href="#id100" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id101">
+<a class="reference internal image-reference" href="_images/Рисунок1012.png"><img alt="Лаб12" src="_images/Рисунок1012.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 101</span><a class="headerlink" href="#id101" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id102">
+<a class="reference internal image-reference" href="_images/Рисунок1021.png"><img alt="Лаб12" src="_images/Рисунок1021.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 102</span><a class="headerlink" href="#id102" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id103">
+<a class="reference internal image-reference" href="_images/Рисунок1031.png"><img alt="Лаб12" src="_images/Рисунок1031.png" style="width: 672.0px; height: 378.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Рисунок 103</span><a class="headerlink" href="#id103" title="Постоянная ссылка на рисунок"></a></p>
+</figcaption>
+</figure>
 </section>
 
 

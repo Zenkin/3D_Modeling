@@ -242,4 +242,625 @@
 
        Рисунок 24
 
-       
+При таком переходе к детали сверху появляется окно
+
+1. При нажатии на крестик из видимости пhопадут все детали? не находящиеся в данном разделе с деталями.
+2. При нажатии “Go to assembly” вы вернетесь к сборке.
+
+.. figure:: _static/Pictures/lab12/Рисунок25.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 25
+
+.. figure:: _static/Pictures/lab12/Рисунок26.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 26
+
+Создаем эскиз и проецируем отверстия шагового двигателя на него.
+
+.. figure:: _static/Pictures/lab12/Рисунок27.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 27
+
+В итоге должен получиться такой эскиз, как на рисунке 28 (необходимо построить окружности со смещением 2мм).
+
+.. figure:: _static/Pictures/lab12/Рисунок28.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 28
+
+Выдавливаем на 10мм, как показано на рисунке 29.
+
+.. figure:: _static/Pictures/lab12/Рисунок29.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 29
+
+Из того же эскиза выдавливаем внутренние сквозные отверстия, так же на 10мм (рисунок 30).
+
+.. figure:: _static/Pictures/lab12/Рисунок30.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 30
+
+И добавляем фаски 1мм.
+
+.. figure:: _static/Pictures/lab12/Рисунок31.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 31 - Добавление фасок
+
+Вернемся в сборку и вставим в нее 3 детали “Bushing”, как показано на рисунке 32.
+
+.. figure:: _static/Pictures/lab12/Рисунок32.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 32
+
+Теперь необходимо зафиксировать эти элементы.
+
+Выбираем создание зависимости “Revolute mate” и создаем зависимость между показанными окружностями деталей (Рисунок 33).
+
+.. figure:: _static/Pictures/lab12/Рисунок33.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 33
+
+Чтобы серая деталь не вращалась, устанавливаем ограничение, нажимаем в пункте “Limits” и выставляем 0 градусов, как показано на рисунке 34.
+
+.. figure:: _static/Pictures/lab12/Рисунок34.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 34
+
+Аналогичным образом зафиксируем 2 оставшиеся детали. Итого добавляется 3 новых зависимости.
+
+Теперь добавим в сборку детали для стягивания нижних половинок корпуса в количестве 4х штук (рисунок 35).
+
+.. figure:: _static/Pictures/lab12/Рисунок35.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 35
+
+Задаем зависимость для одной детали как показано на рисунках 36-38.
+
+.. figure:: _static/Pictures/lab12/Рисунок36.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 36
+
+.. figure:: _static/Pictures/lab12/Рисунок37.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 37
+
+.. figure:: _static/Pictures/lab12/Рисунок38.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 38
+
+Деталь зафиксирована, аналогично фиксируем остальные детали.
+
+.. figure:: _static/Pictures/lab12/Рисунок39.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 39
+
+В итоге должно получиться так, как показано на рисунке 40.
+
+.. figure:: _static/Pictures/lab12/Рисунок40.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 40
+
+Следующим шагом добавим в сборку колесо с рычагом подвески.
+
+.. figure:: _static/Pictures/lab12/Рисунок41.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 41
+
+.. figure:: _static/Pictures/lab12/Рисунок42.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 42
+
+.. figure:: _static/Pictures/lab12/Рисунок43.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 43
+
+.. figure:: _static/Pictures/lab12/Рисунок44.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 44
+
+.. figure:: _static/Pictures/lab12/Рисунок45.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 45
+
+.. figure:: _static/Pictures/lab12/Рисунок46.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 46
+
+.. figure:: _static/Pictures/lab12/Рисунок47.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 47
+
+Задаем все необходимые взаимосвязи, чтобы закрепить первый рычаг подвески (рисунок 48).
+
+.. figure:: _static/Pictures/lab12/Рисунок48.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 48
+
+Далее необходимо установить еще 2 аналогичных объекта, для упрощения воспользуйтесь следующей функцией: сначала выделите 3 детали как показано на рисунке 48.
+
+.. figure:: _static/Pictures/lab12/Рисунок49.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 49
+
+.. figure:: _static/Pictures/lab12/Рисунок50.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 50
+
+.. figure:: _static/Pictures/lab12/Рисунок51.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 51
+
+Таким образом мы добавили 3 составных элемента в сборку максимально просто.
+
+.. figure:: _static/Pictures/lab12/Рисунок52.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 52
+
+.. figure:: _static/Pictures/lab12/Рисунок53.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 53
+
+Устанавливаем еще один элемент.
+
+.. figure:: _static/Pictures/lab12/Рисунок54.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 54
+
+Вернемся к моделированию, далее, следуя картинкам, создайте новую деталь (рисунки 55-64).
+
+.. figure:: _static/Pictures/lab12/Рисунок55.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 55
+
+.. figure:: _static/Pictures/lab12/Рисунок56.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 56
+
+.. figure:: _static/Pictures/lab12/Рисунок57.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 57
+
+.. figure:: _static/Pictures/lab12/Рисунок58.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 58
+
+.. figure:: _static/Pictures/lab12/Рисунок59.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 59
+
+.. figure:: _static/Pictures/lab12/Рисунок60.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 60
+
+.. figure:: _static/Pictures/lab12/Рисунок61.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 61
+
+.. figure:: _static/Pictures/lab12/Рисунок62.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 62
+
+.. figure:: _static/Pictures/lab12/Рисунок63.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 63
+
+.. figure:: _static/Pictures/lab12/Рисунок64.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 64
+
+Вернемся к редактированию сборки, добавим только что созданный элемент.
+
+.. figure:: _static/Pictures/lab12/Рисунок65.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 65
+
+Добавим ведущее колесо вместе с муфтой (Рисунок 66).
+
+.. figure:: _static/Pictures/lab12/Рисунок66.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 66
+
+.. figure:: _static/Pictures/lab12/Рисунок67.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 67
+
+Добавляем еще 1 колесо (рисунки 68, 69).
+
+.. figure:: _static/Pictures/lab12/Рисунок68.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 68
+
+.. figure:: _static/Pictures/lab12/Рисунок69.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 69
+
+Для того чтобы сделать гусеницу которая будет “облегать” все колеса нужен эскиз по которому “лягут” траки (рисунок 70). Переходим в раздел “Suspension”, создаем эскиз на базовой плоскости как показано на рисунке. Создайте случайный вспомогательный прямоугольник примерно схожих размеров.
+
+.. figure:: _static/Pictures/lab12/Рисунок70.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 70
+
+Нужно вставить эскиз ранее нарисованного прямоугольника в сборку, для этого нужно активировать такую возможность нажатием на иконку показанную на рисунке 71.
+
+.. figure:: _static/Pictures/lab12/Рисунок71.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 71
+
+.. figure:: _static/Pictures/lab12/Рисунок72.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 72
+
+Позиционируем таким образом чтобы он находился между колесами и плоскостью корпуса.
+
+Переходим в редактирование эскиза из сборки и с помощью проектирования строим такой эскиз (рисунок 73, 74).
+
+.. figure:: _static/Pictures/lab12/Рисунок73.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 73
+
+.. figure:: _static/Pictures/lab12/Рисунок74.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 74
+
+Создаем эскиз на базовой плоскости (рисунки 75-86).
+
+.. figure:: _static/Pictures/lab12/Рисунок75.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 75
+
+.. figure:: _static/Pictures/lab12/Рисунок76.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 76
+
+.. figure:: _static/Pictures/lab12/Рисунок77.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 77
+
+.. figure:: _static/Pictures/lab12/Рисунок78.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 78
+
+.. figure:: _static/Pictures/lab12/Рисунок79.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 79
+
+.. figure:: _static/Pictures/lab12/Рисунок80.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 80
+
+.. figure:: _static/Pictures/lab12/Рисунок81.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 81
+
+.. figure:: _static/Pictures/lab12/Рисунок82.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 82
+
+.. figure:: _static/Pictures/lab12/Рисунок83.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 83
+
+.. figure:: _static/Pictures/lab12/Рисунок84.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 84
+
+.. figure:: _static/Pictures/lab12/Рисунок85.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 85
+
+.. figure:: _static/Pictures/lab12/Рисунок86.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 86
+
+Вернемся к эскизу на рисунке 84, его необходимо немного сдвинуть так, чтобы нижняя горизонтальная линия проходила через центральную точку.
+
+.. figure:: _static/Pictures/lab12/Рисунок87.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 87
+
+.. figure:: _static/Pictures/lab12/Рисунок88.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 88
+
+С помощью инструмента смещения создаем внутренний эскиз со смещением 0.5 мм (рисунки 89-91).
+
+.. figure:: _static/Pictures/lab12/Рисунок89.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 89
+
+.. figure:: _static/Pictures/lab12/Рисунок90.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 90
+
+.. figure:: _static/Pictures/lab12/Рисунок91.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 91
+
+Далее, чтобы получить гусеницу, используем создание массива по линии.
+Не забываем переключить в режим добавления элементов для того, чтобы уменьшить количество деталей и упростить дальнейшую работу. Вставляем гусеницу в сборку (рисунки 92-95).
+
+.. figure:: _static/Pictures/lab12/Рисунок92.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 92
+
+.. figure:: _static/Pictures/lab12/Рисунок93.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 93
+
+.. figure:: _static/Pictures/lab12/Рисунок94.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 94
+
+.. figure:: _static/Pictures/lab12/Рисунок95.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 95
+
+Далее на основе полученных навыков достройте модель до целой. Ниже представлены изображения того, что должно получиться в итоге (рисунки 96-103).
+
+.. figure:: _static/Pictures/lab12/Рисунок96.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 96
+
+.. figure:: _static/Pictures/lab12/Рисунок97.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 97
+
+.. figure:: _static/Pictures/lab12/Рисунок98.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 98
+
+.. figure:: _static/Pictures/lab12/Рисунок99.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 99
+
+.. figure:: _static/Pictures/lab12/Рисунок100.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 100
+
+.. figure:: _static/Pictures/lab12/Рисунок101.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 101
+
+.. figure:: _static/Pictures/lab12/Рисунок102.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 102
+
+.. figure:: _static/Pictures/lab12/Рисунок103.png
+       :scale: 35 %
+       :align: center
+       :alt: Лаб12
+
+       Рисунок 103
