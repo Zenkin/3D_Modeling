@@ -7,6 +7,7 @@
    :maxdepth: 2
    :caption: Содержание:
 
+   lab0
    lab1
    lab2
    lab3
